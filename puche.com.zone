@@ -1,0 +1,19 @@
+$TTL 86400  ; Tiempo de vida en segundos
+
+@   IN  SOA  ns1.puche.com. admin.puche.com. (
+              2023081501 ; Número de serie
+              3600       ; Tiempo de refresco
+              1800       ; Tiempo de reintento
+              604800     ; Tiempo de expiración
+              86400 )    ; Tiempo mínimo de caché
+
+@   IN  NS   ns1.puche.com.
+
+ns1 IN  A    192.168.50.3
+
+www IN  A    192.168.50.3
+mail IN  A   192.168.50.4
+ftp  IN  A   192.168.50.5
+
+miweb IN  CNAME  www.puche.com.  ; Alias para www.puche.com
+
